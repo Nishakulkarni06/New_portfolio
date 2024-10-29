@@ -1,0 +1,29 @@
+.card{
+    height: 15rem;
+    width: 40rem;
+    display: flex;
+    margin-left:25rem;
+    gap: 2rem;
+    box-shadow: 0px 20px 24px 3px rgba(251,164,40,.42);
+}
+
+.card img{
+    height: 9rem;
+    width: 15rem;
+    margin: 3rem 0 0 3rem;
+    box-shadow: 0px 20px 24px 3px rgba(251,164,40,.42);
+}
+
+.card h3{
+    font-size: 2rem;
+    margin: 3rem 0 0 4rem;
+}
+
+.card p{
+    margin:6rem 0 0 -8rem ;
+}
+
+.card:hover{
+    background-color:whitesmoke;
+    box-shadow: 0px 30px 30px 5px rgba(251,164,40,.42);
+}
