@@ -1,0 +1,44 @@
+.Contact{
+    margin: 10rem 0 0 20rem;
+    display: flex;
+}
+.Contact p{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Contact form{
+    margin: 3rem 0 0 5rem;
+}
+
+.Contact form input{
+    height: 2rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+    border: orange 2px solid;
+    border-radius: .5rem;
+}
+ 
+.Contact form textarea{
+    height: 4rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+    border: orange 2px solid;
+    border-radius: .5rem;
+}
+
+.Contact form button{
+    margin: 0 0 0 6rem;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -10;
+    top: -18%;
+    left: 56%;
+    filter: blur(80px);
+}

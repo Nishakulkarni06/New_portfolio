@@ -1,0 +1,43 @@
+.ProjCards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 25rem;
+    height: 30rem;
+    width: 40rem;
+    box-shadow: 0px 20px 24px 3px rgba(228, 143, 24, 0.42);
+}
+
+
+.ProjCards img{
+    height: 30rem;
+    width: 40rem;
+   border: 1px solid gray;
+    /* box-shadow: 0px 20px 24px 3px rgb(171, 164, 164); */
+}
+
+.ProjCards p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.ProjText{
+    display: flex;
+}
+
+.arrow{
+    margin: 2.5rem 0 0 15rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #eab91a;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.arrow:hover{
+    background-color:white;
+    border: 3px solid #eab91a ;
+}

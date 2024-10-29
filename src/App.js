@@ -23,8 +23,10 @@ import figma from '@iconify-icons/logos/figma';
 import c from '@iconify-icons/logos/c';
 import java from '@iconify-icons/logos/java'
 import python from '@iconify-icons/logos/python'; 
-
+import Main from "./components/MainProjCards/Main"
+import Contact from "./components/Contact/Contact";
 function App() {
+
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -211,6 +213,9 @@ function App() {
           </div>
 
         </div>
+
+        <Main></Main>
+        <Contact></Contact>
       </div>
       <Footer></Footer>
     </div>

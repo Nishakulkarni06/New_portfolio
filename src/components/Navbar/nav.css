@@ -9,6 +9,7 @@
     background-color: white;
     color: black;
     z-index: 1000; 
+    border-bottom: 1px solid #fdc50f;
 }
 
 .left_nav{
