@@ -118,7 +118,6 @@
 
 
 
-
 /* slide logos */
 
 .slider {
@@ -169,24 +168,3 @@
     }
 }
 
-/* Gradient shadow on sides */
-.slider::before,
-.slider::after {
-    /* background: linear-gradient(to right, rgba(216, 132, 15, 0.42) 0%, #f1b80d 100%); */
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
