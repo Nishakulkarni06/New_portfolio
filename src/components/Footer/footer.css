@@ -1,12 +1,58 @@
-.footer{
+
+.footer {
     display: flex;
-    justify-content:end;
-    position: fixed; 
-    top: 0; 
-    left: 0;
-    width: 100%; 
-    height:3rem;
-    background-color: white;
-    color: black;
-    z-index: 1000; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 89rem;
+    height: 25rem; /* Ensures footer div matches image height */
+    margin: -0.5rem -3.5rem;
+    margin-top: -5rem;
+}
+
+.footer img {
+    height: 100%; /* Adjusted to fill the footer's height */
+    width: 100%;
+    object-fit: cover;
+    margin-top: 15rem;
+}
+
+.f-content {
+    position: absolute;
+    top: 5rem; 
+    left: 5rem; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1; /* Ensures text is above the image */
+}
+.f-content h2 span{
+    margin-left: -9rem;
+}
+.footer .f-content h2{
+    margin: 35rem 0 0 50rem;
+}
+
+.footer .footer_links{
+    position: absolute;
+   display:flex;
+   margin: 20rem 0 0 40rem;
+
+}
+
+.footer .footer_links .part{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.footer .footer_links .part h3 {
+    margin-left: 1rem;
+    margin-bottom: -.5rem;
+}
+
+.footer p{
+    position: absolute;
+    margin-top: 37rem;
 }

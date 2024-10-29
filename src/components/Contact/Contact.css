@@ -42,3 +42,8 @@
     left: 56%;
     filter: blur(80px);
 }
+
+.Sociallogos a img{
+    height: 6rem;
+    width: 8rem;
+}

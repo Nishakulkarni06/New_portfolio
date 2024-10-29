@@ -1,5 +1,7 @@
 import React from 'react'
-import './Contact.css'
+import './Contact.css';
+import github from '../../photos/github.jpeg';
+import linkedin from '../../photos/Link.jpeg'
 const Contact = () => {
   return (
     <div className='Contact'>
@@ -9,10 +11,18 @@ const Contact = () => {
           >
             {" "}
           </div>
+          <div className="social">
+
       <p> Get In Touch
          <br/>
          <span style={{color:"#fb982f"}}>Contact Me ! </span>
       </p>
+      <div className="Sociallogos">
+        <a href='https://www.linkedin.com/in/nisha-kulkarni-developer/'><img src={linkedin}></img></a>
+        <a href='https://github.com/Nishakulkarni06'><img src={github}></img></a>
+      </div>
+                  
+      </div>
         <form> 
             <input placeholder='Name'></input>
          <br/>
