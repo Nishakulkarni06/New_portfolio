@@ -9,6 +9,20 @@ import code from "./photos/code.jpg";
 import book from "./photos/book.jpeg";
 import nisha_img from "./photos/nisha_img.jpg";
 import Cards from "./components/Cards/cards";
+import { Icon } from '@iconify/react';
+import reactIcon from '@iconify-icons/logos/react'; 
+import htmlIcon from '@iconify-icons/logos/html-5';
+import cssIcon from '@iconify-icons/logos/css-3'; 
+import jsIcon from '@iconify-icons/logos/javascript';
+import bootstrapIcon from '@iconify-icons/logos/bootstrap';
+import nodeJs from '@iconify-icons/logos/nodejs';
+import mongodb from '@iconify-icons/logos/mongodb';
+import express from '@iconify-icons/logos/express';
+import sql from '@iconify-icons/logos/mysql'; 
+import figma from '@iconify-icons/logos/figma';
+import c from '@iconify-icons/logos/c';
+import java from '@iconify-icons/logos/java'
+import python from '@iconify-icons/logos/python'; 
 
 function App() {
   return (
@@ -73,6 +87,129 @@ function App() {
             </p>
             <img src={book} style={{ width: 150, marginRight: 60 }}></img>
           </div>
+        </div>
+
+        <div
+            className="blur"
+            style={{ backgroundColor: "#c1f5ff", top: "90rem", left: "10rem" }}
+          >
+            {" "}
+          </div>
+
+        <div className="skills">
+          <h2>Skills</h2>
+          <div className="logos">
+            <div className="slider">
+              <div className="slide-track">
+                    <div className="slide">
+                      <Icon icon={htmlIcon} style={{ fontSize: '50px' }} />                      
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={cssIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={jsIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={reactIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={bootstrapIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={nodeJs} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={mongodb} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={express} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={sql} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={figma} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={c} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={java} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={python} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    {/* double */}
+
+                    <div className="slide">
+                    <Icon icon={htmlIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={cssIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={jsIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={reactIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={bootstrapIcon} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={nodeJs} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={mongodb} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={express} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={sql} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={figma} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={c} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={java} style={{ fontSize: '50px' }} />
+                    </div>
+
+                    <div className="slide">
+                    <Icon icon={python} style={{ fontSize: '50px' }} />
+                    </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <Footer></Footer>

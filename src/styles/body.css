@@ -83,10 +83,10 @@
     height: 14rem;
     border-radius: 50%;
     background: #edd0ff;
-    z-index: -9;
+    z-index: -10;
     top: -18%;
     left: 56%;
-    filter: blur(72px);
+    filter: blur(80px);
 }
 
 /* body  */
@@ -94,4 +94,99 @@
 .About h2{
    font-size: 3rem;
    margin: 5rem 0 2rem 35rem;
+}
+
+/* skills */
+.skills {
+    margin:10rem 0 0 0rem;
+    background-color: #ecb71b;
+    height: 10rem;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills h2{
+    font-size: 2rem;
+    margin: 4rem 0 0 40rem;
+}
+
+.skills .logos{
+    gap: 2rem;
+    margin-top: -4rem;
+}
+
+
+
+
+/* slide logos */
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(100px * 26); /* Adjusts width to accommodate all icons */
+    animation: scroll 20s linear infinite; /* Adds smooth scrolling animation */
+}
+
+.slide {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    perspective: 100px;
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.slide:hover {
+    background-color: #f1b80d;
+  box-shadow: 0px 20px 24px 3px rgba(216, 132, 15, 0.42);
+    
+    transform: translateZ(20px); /* Hover effect with slight 3D appearance */
+}
+
+.slider:hover .slide-track {
+    animation-play-state: paused;
+}
+
+/* Animation for continuous scroll */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Gradient shadow on sides */
+.slider::before,
+.slider::after {
+    /* background: linear-gradient(to right, rgba(216, 132, 15, 0.42) 0%, #f1b80d 100%); */
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
