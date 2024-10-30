@@ -7,7 +7,7 @@
     width: 89rem;
     height: 25rem; /* Ensures footer div matches image height */
     margin: -0.5rem -3.5rem;
-    margin-top: -5rem;
+    margin-top: -20rem;
 }
 
 .footer img {
@@ -55,4 +55,14 @@
 .footer p{
     position: absolute;
     margin-top: 37rem;
+}
+
+.footer .footer_links .part li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .footer_links .part li:hover{
+ text-decoration: underline;
+ cursor: pointer;
 }

@@ -14,7 +14,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import ProjCards from "../../components/ProjCards/ProjCards";
 import {EffectCoverflow ,Pagination ,Navigation}  from 'swiper/modules';
+import {motion} from "framer-motion";  
+
 const Main = () => {
+const transition = {duration:2,type:'spring'} 
     
   return (
     <div>
@@ -44,9 +47,17 @@ const Main = () => {
             modules = {[EffectCoverflow,Pagination,Navigation]} 
              className="swiper_container"
              >
+              
+              <motion.div
+    initial={{ backgroundColor: "white" }} 
+    whileInView={{ backgroundColor:"black" }} 
+    transition={{ duration: 0.5 }} 
+    viewport={{ once: false }} // Set to false for testing
+>
               <SwiperSlide>
               <ProjCards image={Wanderlust} text={'Hotel Rentel Booking'} link={'https://wanderlust-51in.onrender.com/listings'} className='projCards'></ProjCards>
               </SwiperSlide>
+              </motion.div>
               <SwiperSlide>
               <ProjCards image={Zoomify} text={'Video Calling App'} link={'https://zoomify-frontend.onrender.com'} className='projCards'></ProjCards>
               </SwiperSlide>

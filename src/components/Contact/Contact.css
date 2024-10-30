@@ -1,4 +1,4 @@
-.Contact{
+/* .Contact{
     margin: 10rem 0 0 20rem;
     display: flex;
 }
@@ -20,16 +20,14 @@
 }
  
 .Contact form textarea{
-    height: 4rem;
+    height: 5rem;
     width: 20rem;
     margin-bottom: 2rem;
     border: orange 2px solid;
     border-radius: .5rem;
 }
 
-.Contact form button{
-    margin: 0 0 0 6rem;
-}
+
 
 .blur{
     position: absolute;
@@ -42,8 +40,89 @@
     left: 56%;
     filter: blur(80px);
 }
-
-.Sociallogos a img{
+*/
+.Sociallogos a img {
     height: 6rem;
     width: 8rem;
+    cursor: pointer;
+    margin-top: 3rem;
+} 
+
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+      /* scroll */
+  padding-top: 3rem;
 }
+
+.w-left{
+    margin-left: 10rem;
+}
+
+.awesome span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right .button{
+    height: 2.5rem;
+    width: 7rem;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+     border: none;
+    border-radius: 2rem; 
+    font-size: .8rem;
+    font-weight: bold;
+    margin-top: .7rem;
+    cursor: pointer; 
+    box-shadow: 0px 20px 24px 3px rgba(251,164,40,.42);
+}
+
+.c-right>form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;   
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.c-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+
+}   
