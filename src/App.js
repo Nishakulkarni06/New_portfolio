@@ -25,8 +25,10 @@ import java from '@iconify-icons/logos/java'
 import python from '@iconify-icons/logos/python'; 
 import Main from "./components/MainProjCards/Main"
 import Contact from "./components/Contact/Contact";
+import {motion} from "framer-motion";  
+import { duration } from "@mui/material";
 function App() {
-
+const transition = {duration:2,type:'spring'} 
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -35,6 +37,11 @@ function App() {
           <div className="left_main">
             <h3>Hii I'm </h3>
             <br></br>
+            <motion.div
+        initial={{ marginTop:"5rem" }} // Initial state
+        whileInView={{ marginTop:"1em" }} // Animation state when in view
+        transition={transition} // Your transition object
+        >
             <span> Nisha </span>
             <br></br>
             <span>Kulkarni</span>
@@ -42,17 +49,29 @@ function App() {
             <button>Download Resume</button>
             <hr></hr>
             <p>Aspiring Full Stack Web Developer </p>
+            </motion.div> 
           </div>
           <div className="right_main">
             <div className="image"></div>
             <div className="float">
-              <FloatingDiv
+            <motion.div
+        initial={{ marginLeft:"-.5rem" }} // Initial state
+        whileInView={{ marginLeft:"-2rem" }} // Animation state when in view
+        transition={transition} // Your transition object
+    >
+               <FloatingDiv
                 image={crown}
                 txt1={"Web"}
                 txt2={"Developer"}
               ></FloatingDiv>
+               </motion.div>
               <div className="code_img">
-                <img src={code}></img>
+                <motion.img 
+                 initial={{marginLeft:"-15rem"}}
+                 whileInView={{marginLeft:"-12rem"}}
+                 transition={transition}
+               src={code}
+               ></motion.img>
               </div>
             </div>
           </div>
@@ -68,6 +87,11 @@ function App() {
           </div>
         </div>
         <div className="About">
+        <motion.div
+        initial={{ marginLeft:"-3rem" }} // Initial state
+        whileInView={{ marginLeft:"-.5rem" }} // Animation state when in view
+        transition={transition} // Your transition object
+    >
           <h2>About me</h2>
           <Cards
             image={nisha_img}
@@ -76,6 +100,13 @@ function App() {
               "A passionate web developer specializing in the MERN stack, constantly learning and building modern, scalable web applications."
             }
           ></Cards>
+               </motion.div>
+
+               <motion.div
+        initial={{ marginLeft:"3rem" }} // Initial state
+        whileInView={{ marginLeft:"-.5rem" }} // Animation state when in view
+        transition={transition} // Your transition object
+    >
           <div className="card" style={{ marginTop: 70 }}>
             <h3>Education</h3>
             <p style={{ marginLeft: -190 }}>
@@ -88,7 +119,10 @@ function App() {
               12th : 76.4%
             </p>
             <img src={book} style={{ width: 150, marginRight: 60 }}></img>
+
           </div>
+          </motion.div>
+
         </div>
 
         <div
