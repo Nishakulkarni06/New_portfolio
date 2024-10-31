@@ -5,7 +5,12 @@ import {motion} from "framer-motion";
 
 const Footer = () => {
   const transition = {duration:2,type:'spring'} 
-
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className='footer' >
       <img src={Wave}></img>
@@ -27,11 +32,11 @@ const Footer = () => {
         <div className="part"> 
         <h3>SitePage</h3>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Project</li>
-          <li>Skills</li>
-          <li>Contact</li>
+          <li onClick={()=>scrollToSection('home')}>Home</li>
+          <li onClick={()=>scrollToSection('About')}>About</li>
+          <li  onClick={()=>scrollToSection('Projects')}>Project</li>
+          <li onClick={()=>scrollToSection('skills')}>Skills</li>
+          <li onClick={()=>scrollToSection('contact')}>Contact</li>
         </ul>
         </div>
 

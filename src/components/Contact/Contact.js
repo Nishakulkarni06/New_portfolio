@@ -120,6 +120,12 @@ const Contact = () => {
     <div className="contact-form" id="contact">
       <Toaster />
       {/* left side copy and paste from work section */}
+      <div
+            className="contact_blur"
+            style={{ backgroundColor: "#c1f5ff", top: "90rem", left: "10rem" }}
+          >
+            {" "}
+          </div>
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}

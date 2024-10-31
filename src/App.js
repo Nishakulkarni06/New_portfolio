@@ -29,11 +29,12 @@ import {motion} from "framer-motion";
 import { duration } from "@mui/material";
 function App() {
 const transition = {duration:2,type:'spring'} 
+
   return (
     <div className="App">
       <Navbar></Navbar>
       <div className="main">
-        <div className="hero">
+        <div className="hero" id="home">
           <div className="left_main">
             <h3>Hii I'm </h3>
             <br></br>
@@ -86,7 +87,7 @@ const transition = {duration:2,type:'spring'}
             {" "}
           </div>
         </div>
-        <div className="About">
+        <div className="About" id="About">
         <motion.div
         initial={{ marginLeft:"-3rem" }} // Initial state
         whileInView={{ marginLeft:"-.5rem" }} // Animation state when in view
@@ -132,7 +133,7 @@ const transition = {duration:2,type:'spring'}
             {" "}
           </div>
 
-        <div className="skills">
+        <div className="skills" id="skills">
           <h2>Skills</h2>
           <div className="logos">
             <div className="slider">
@@ -248,7 +249,7 @@ const transition = {duration:2,type:'spring'}
 
         </div>
 
-        <Main></Main>
+        <Main ></Main>
         <Contact></Contact>
       </div>
       <Footer></Footer>
