@@ -61,6 +61,19 @@
     margin-left: 10rem;
 }
 
+
+.contact_blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -10;
+    top: 50%;
+    left: 40%;
+    filter: blur(80px);
+}
+
 .awesome span{
     font-size: 3rem;
     font-weight: bold;
