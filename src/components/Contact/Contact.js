@@ -69,6 +69,8 @@ import {motion} from "framer-motion";
 
 // export default Contact;
 
+
+
 import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
@@ -92,7 +94,9 @@ const Contact = () => {
     span.innerHTML = "";
   };
   const sendEmail = (e) => {
+    alert("sendEmail function triggered");
     e.preventDefault();
+    console.log("sending email");
 
     emailjs
       .sendForm(
@@ -179,7 +183,15 @@ const Contact = () => {
             placeholder="Message"
             style={{ border: "2px solid #fb982f" }}
           />
-          <input type="submit" value="Send" className="button" />
+          {/* <input type="submit" value="Send" className="button" /> */}
+          {/* <button type="submit" className="button">Send</button> */}
+          <button
+  type="submit"
+  className="button"
+  onClick={() => console.log("Button clicked")}
+>
+  Send
+</button>
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"

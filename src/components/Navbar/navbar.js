@@ -2,7 +2,12 @@ import React from 'react'
 import './nav.css' 
 import {Link} from 'react-scroll'
 import ProjCards from '../ProjCards/ProjCards'
+import Toogle from '../Toggle/Toogle'
+import { useContext } from "react";
+import { themeContext } from "../../Context";
 const Navbar = () => {
+  const theme = useContext(themeContext);
+const darkMode = theme.state.darkMode; 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -10,11 +15,14 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="navbar">
+    <div className="navbar"  style = {{
+      backgroundColor: darkMode ? "black" : "",
+      color : darkMode ? "white" : ""
+    }}>
         
     <div className="left_nav">
     <p>Portfilio</p>
-    <p>Toogle</p>
+    <Toogle></Toogle>
     </div>
    <div className="right_nav">
     <Link spy={true} to={Navbar} smooth={true } activeClass="activeClass">

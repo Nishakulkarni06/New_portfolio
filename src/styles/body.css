@@ -22,7 +22,9 @@
 .main .left_main button{
     height: 2.5rem;
     width: 10rem;
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    /* background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+     */
+    background: #fb982f;
      border: none;
     border-radius: 2rem; 
     color: white;
@@ -34,9 +36,9 @@
 }
 
 .main .left_main button:hover{
-    /* background-color: white;
-    border: #fb982f; */
-    background-color: green;
+    background-color: white;
+    border:1px solid #fb982f; 
+    color: black;
 }
 
 .main .left_main hr{

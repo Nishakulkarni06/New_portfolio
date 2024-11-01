@@ -37,10 +37,12 @@ button{
     font-size: .8rem;
     font-weight: bold;
     margin-top: .7rem;
-    cursor: pointer; 
     box-shadow: 0px 20px 24px 3px rgba(251,164,40,.42);
 }
 
 button:hover{
-    background-color: green;
+    cursor: pointer; 
+    background: white;
+    border: 1px solid #fb982f;
 }
+

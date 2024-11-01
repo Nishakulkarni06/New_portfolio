@@ -27,11 +27,19 @@ import Main from "./components/MainProjCards/Main"
 import Contact from "./components/Contact/Contact";
 import {motion} from "framer-motion";  
 import { duration } from "@mui/material";
+import { useContext } from "react";
+import { themeContext } from "./Context";
+
 function App() {
 const transition = {duration:2,type:'spring'} 
-
+const theme = useContext(themeContext);
+const darkMode = theme.state.darkMode; 
   return (
-    <div className="App">
+    <div className="App" 
+    style = {{
+      backgroundColor: darkMode ? "black" : "",
+      color : darkMode ? "white" : ""
+    }}>
       <Navbar></Navbar>
       <div className="main">
         <div className="hero" id="home">
@@ -47,7 +55,9 @@ const transition = {duration:2,type:'spring'}
             <br></br>
             <span>Kulkarni</span>
             <br></br>
+            <a href="/Nisha-kulkarni-resume.pdf" download="Nisha_Kulkarni_Resume.pdf">
             <button>Download Resume</button>
+            </a>
             <hr></hr>
             <p>Aspiring Full Stack Web Developer </p>
             </motion.div> 
