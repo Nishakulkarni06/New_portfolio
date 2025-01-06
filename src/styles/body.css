@@ -52,6 +52,42 @@
     font-size: 2rem;
 }
 
+@media (max-width:800px) {
+.main .left_main{
+   margin-left: 2rem;
+}
+.main .left_main p{
+    font-size: 1rem;
+}
+.About {
+    margin-left: -20rem;
+}
+.About .card {
+    width: 30rem;
+}
+.About .card p{
+    font-size: 1rem;
+}
+}
+
+@media (max-width:800px) {
+.About h2{
+    margin-left: -20rem;
+}
+.About .card {
+    width: 30rem;
+}
+.About img{
+    width: 2px;
+}
+}
+
+@media (max-width:1110px){
+    .main .right_main {
+        display: none;
+    }    
+}
+
 /* right */
 
 .right_main{
@@ -118,7 +154,35 @@
     margin-top: -4rem;
 }
 
+@media(max-width:1000px){
+    .skills{
+        width: 60rem;
+    }
+    .skills h2{
+        margin-left: 30rem;
+    }
+   }
 
+@media(max-width:800px){
+ .skills{
+     width: 55rem;
+ }
+ .skills h2{
+    margin-left: 20rem;
+}
+}
+
+@media(max-width:800px){
+    .skills h2{
+     margin-left:10rem;
+    }
+}
+
+@media(max-width:800px){
+.skills{
+    width: 30rem;
+}
+}
 
 /* slide logos */
 

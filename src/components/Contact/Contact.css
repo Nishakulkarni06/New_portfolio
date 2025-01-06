@@ -57,7 +57,7 @@
   padding-top: 3rem;
 }
 
-.w-left{
+.w-left {
     margin-left: 10rem;
 }
 
@@ -132,7 +132,7 @@ textarea{
     left: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 850px) {
     .contact-form{
         padding: 0;
         flex-direction: column;
@@ -144,3 +144,13 @@ textarea{
     }
 
 }   
+
+@media (max-width: 850px){
+.w-left{
+    font-size: 1px;
+    margin-left: 5rem;
+}
+.social{
+    display: none;
+}
+}

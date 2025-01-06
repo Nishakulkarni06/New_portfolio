@@ -46,3 +46,20 @@ button:hover{
     border: 1px solid #fb982f;
 }
 
+@media (max-width:700px){
+.navbar .right_nav{
+        display: none;
+}
+.navbar{
+    width: 45rem;
+}
+}
+
+@media (max-width:412px){
+.navbar .right_nav{
+    display: none;
+}
+.navbar{
+    width: 26rem;
+}
+}

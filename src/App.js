@@ -55,7 +55,7 @@ const darkMode = theme.state.darkMode;
             <br></br>
             <span>Kulkarni</span>
             <br></br>
-            <a href="/Nisha-kulkarni-resume.pdf" download="Nisha_Kulkarni_Resume.pdf">
+            <a href="/Nisha.Resume.pdf" download="Nisha_Resume.pdf">
             <button>Download Resume</button>
             </a>
             <hr></hr>
