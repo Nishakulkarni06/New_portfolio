@@ -22,7 +22,7 @@ const Footer = () => {
     viewport={{ once: false }} // Set to false for testing
 >
       <h2> 
-        /<span>Let's Work  </span>
+        Let's Work 
 <br/>
        Together Today ! 
       </h2>

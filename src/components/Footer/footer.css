@@ -66,3 +66,41 @@
  text-decoration: underline;
  cursor: pointer;
 }
+
+@media  (max-width:900px) {
+.footer{
+ width: 70rem;
+} 
+.footer img{
+ width: 60rem;
+ margin-left: 2px;
+}
+.footer h2{
+    margin-left: 10rem;
+    /* font-size: 1rem; */
+}
+.footer .footer_links{
+    margin-left: 20rem;
+}
+}
+
+@media (max-width:800px) {
+.footer{
+     width: 60rem;
+}
+.footer img{
+    width: 60rem;
+}
+.footer .f-content h2{
+    margin-left: 10rem;
+    font-size: 1rem;
+}
+
+.footer .footer_links {
+    margin-left: -17rem;
+}
+
+.footer p{
+    margin-left: -25rem;
+}
+}    
